@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,22 @@
 <body>
     <header class="header">
         <div class="header-inner">
-            <a href="#">
-                <img src="imgs/logo.png" alt="logo">
+            <a href="#" class="header-logo">
+                <img src="imgs/logo.png" alt="NCQ Technologies">
             </a>
-            <nav class="nav-bar">
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="main-nav">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+            </button>
+
+            <nav class="nav-bar" id="main-nav" aria-label="Navegación principal">
                 <ul>
                     <li><a href="#about-us">Acerca de NCQ</a></li>
                     <li><a href="#areas-expertise">Áreas de especialización</a></li>
@@ -211,5 +223,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/nav.js"></script>
 </body>
 </html>
